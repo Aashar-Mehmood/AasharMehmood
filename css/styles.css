@@ -601,7 +601,7 @@ footer span:hover{
 
 @media screen and (max-width:320px) {
   #about1{
-    height:420px;
+    height:450px;
   }
   #about1 div h1{
     font-size: 1.8rem;
@@ -611,7 +611,7 @@ footer span:hover{
   }
   #about1 div div {
     flex-flow:column;
-    height: 110px;
+    height: 130px;
     margin-left: 50px;
   }
   #projects .container{
