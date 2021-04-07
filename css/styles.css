@@ -145,6 +145,7 @@ main section {
 }
 #about1 h2 {
   font-size: 1.7rem;
+  margin: 15px 0 25px 0;
 }
 #about1 div div{
   display: flex;
@@ -379,8 +380,11 @@ footer span:hover{
 
 /* ====================== */
 @media screen and (max-width: 1024px) {
+  main {
+    padding: 15px;
+  }
   header {
-    padding: 20px 60px 60px;
+    padding: 30px 60px 30px 60px;
   }
   header nav {
     width: 50%;
@@ -390,6 +394,18 @@ footer span:hover{
     width: 90%;
   }
 }
+@media screen and (max-width:990px) {
+  main a{
+    width: 110px;
+  }
+  #projects .container div.desc div.btns{
+    margin-left: -15px;
+    justify-content: space-evenly;
+    width: 270px;
+  }
+}
+
+
 
 /* ======================= */
 
@@ -398,6 +414,10 @@ footer span:hover{
 /* ====================== */
 
 @media screen and (max-width:768px){
+  main a{
+    width: 140px;
+  }
+  
   #about1 div{
     max-width: 86%;
   }
@@ -414,6 +434,11 @@ footer span:hover{
   }
   #projects .container div.arrow{
     display: none;
+  }
+  #projects .container div.desc div.btns{
+    margin-left: -22px;
+    justify-content: space-evenly;
+    width: 350px;
   }
   #contact form>div{
     width: 80%;
@@ -436,7 +461,7 @@ footer span:hover{
 
 /* ====================== */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
   header {
     padding: 20px 40px;
   }
@@ -531,8 +556,19 @@ footer span:hover{
     width: 100%;
   }
   #projects .container:nth-child(odd) div.desc{
+    height: auto;
     padding-left: 30px;
   }
+  #projects .container div.desc{
+    height: auto;
+  }
+  #projects .container div.desc h3{
+    margin: 25px 0;
+  }
+  #projects .container div.desc div.btns{
+    margin: 25px 0px 25px -20px;
+  }
+
   #contact {
     margin-top: 0;
   }
@@ -546,6 +582,14 @@ footer span:hover{
   footer div ul{
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #projects .container div.desc div.btns{
+    flex-flow: column;
+    height: 130px;
+    margin: 10px 0 20px 0;
   }
 }
 
@@ -585,9 +629,8 @@ footer span:hover{
     margin-top: 10px;
   }
   #projects .container div.desc div.btns{
-    flex-flow: column;
-    height: 110px;
-    margin-bottom: 20px;
+    height: 140px;
+    justify-content: space-around;
   }
   #contact form>div{
     width: 100%;
