@@ -1,0 +1,176 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Arial, Helvetica, sans-serif;
+}
+h2{
+  text-transform: uppercase;
+}
+
+body p{
+  font-size: 18px;
+}
+
+
+main{
+  background-color: rgb(168, 219, 233);
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+div.container{
+  width: 40vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+div.container.left {
+  display: flex;
+  flex-flow: column;
+  border-left: 10px solid rgb(33, 179, 219) ;
+  padding: 0 60px;
+
+}
+
+/* left div first Section */
+
+section#first img{
+  width: 200px;
+  height: 250px;
+  border:1px solid white; 
+}
+section#first div.links{
+  display: flex;
+  flex-flow: column;
+  min-height: 150px;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+section#first div.links a{
+  color:black;
+  text-decoration: none;
+}
+i.fab.fa-github{
+  color: black;
+}
+i.fab.fa-linkedin{
+  color: #0e76a8;
+}
+i.fab.fa-facebook{
+  color:blue;
+}
+i.fab.fa-twitter{
+  color:#00ACEE;  
+}
+
+i.fab{
+  background-color: #fff;
+  font-size: 20px;
+}
+/* left div Second Section */
+
+section#second {
+  display: flex;
+  flex-flow: column;
+  min-height: 200px;
+  justify-content: space-between;
+}
+section#second div.sk>div{
+  width: 80%;
+  height: 20px;
+  border: 1px solid black;
+  margin: 5px 0;
+}
+
+section#second div.sk>div div{
+  height: 100%;
+  border-radius: 3px;
+  background-color:rgb(1, 177, 95);
+}
+section#second div.sk>div div.html{
+  width: 90%;
+}
+section#second div.sk>div div.css{
+  width: 80%;
+}
+section#second div.sk>div div.js{
+  width: 75%;
+}
+section#second div.sk>div div.boot{
+  width: 50%;
+}
+
+/* left div third Section */
+section#third div, section#fourth div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
+
+section#third div ul, section#fourth div ul{
+  display: flex;
+  flex-flow: column;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+/* right div first  */
+div.container.right section#about-me, div.container.right section#education, div.container.right section#interests {
+  border-left: 10px solid rgb(33, 179, 219) ;
+  margin: 40px 0;
+  padding: 20px 5px 20px 20px;
+}
+
+div.container.right section#interests ul{
+  display: flex;
+  flex-flow: column;
+  min-height: 100px;
+  justify-content: space-between;
+}
+
+/* for Ipad */
+@media screen and (max-width:780px){
+  
+  div.container.left, div.container.right{
+    padding:0 20px;
+
+  }
+  div.container.left{
+    width: 35vw;
+  }
+  section#second{
+    width: 40vw;
+  }
+  div.container.right{
+    width: 54vw;
+  }
+  div.container.right section#about-me{
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  section#about-me p {
+    line-height: 26px;
+  }
+  
+}
+
+/* for mobile devices */
+@media screen and (max-width:480px){
+  div.container.left, div.container.right{
+    width: 90vw;
+  }
+  div.container.right{
+    padding-left: 1px;
+  }
+  section#second{
+    width: 80vw;
+  }
+}
