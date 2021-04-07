@@ -18,7 +18,9 @@ closeNav.addEventListener('click', ()=>{
 if(window.outerWidth>420){
   showNav.style.display='none';
 }
-
+else{
+  showNav.style.display = 'block';
+}
 const goToTop = document.getElementById('goTop');
 goToTop.addEventListener('click', ()=>{
   window.scrollTo(0, -(document.body.scrollHeight));
