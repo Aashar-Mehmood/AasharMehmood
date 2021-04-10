@@ -11,6 +11,7 @@ html, body{
 body {
   font-family: "Times New Roman", Times, serif;
   width: 100%;
+  position: relative;
 }
 
 li {
@@ -324,7 +325,6 @@ footer{
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  position: relative;
 }
 footer div{
   padding: 30px;
@@ -350,8 +350,9 @@ footer>div.links{
 }
 footer span{
   position: absolute;
-  top: 50%;
+  bottom: 3%;
   right: 50px;
+  z-index:100;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -445,6 +446,7 @@ footer span:hover{
   }
   footer {
     flex-wrap: wrap;
+    
   }
   footer div{
     width: 46%;
@@ -452,6 +454,15 @@ footer span:hover{
   }
   footer div.aboutMe{
     width: 80%;
+  }
+  footer span{
+    position: fixed;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    line-height: 70px;
+    font-size: 70px;
   }
 }
 

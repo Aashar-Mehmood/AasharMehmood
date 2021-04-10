@@ -15,13 +15,38 @@ closeNav.addEventListener('click', ()=>{
   phonNavSec.classList.remove('active');
   showNav.style.display = 'block';
 });
-if(window.outerWidth>420){
+if(document.body.clientWidth>420){
   showNav.style.display='none';
 }
 else{
   showNav.style.display = 'block';
 }
+
 const goToTop = document.getElementById('goTop');
+
+window.onscroll = function(){
+  scrollFunction();
+};
+
+function scrollFunction(){
+  if(document.body.clientWidth<=768){
+    // get total scroll-able height of body.
+    const scrollHeight = document.body.scrollHeight;
+    // when scrollTop becomes greater than 1/4 of total height show the icon
+    if(document.body.scrollTop>=(scrollHeight/4) || document.documentElement.scrollTop>=(scrollHeight/4))
+    {
+      goToTop.style.display = "block";
+    }
+    else{
+      goToTop.style.display = "none";
+    }
+    
+  }
+}
+
 goToTop.addEventListener('click', ()=>{
-  window.scrollTo(0, -(document.body.scrollHeight));
+  document.body.scrollTop=0;
+  document.documentElement.scrollTop=0;
 });
+
+
