@@ -379,9 +379,12 @@ footer i{
   color: #7ed2fa;
   background-color: #fff;
   padding-top: 10px;
-  box-shadow: 0px 0px 20px 6px;
+  box-shadow: 0px 0px 15px 6px;
+  transition: box-shadow 0.4s ease-in-out;
 }
-
+footer i:hover{
+  box-shadow:0px 0px 15px 12px;
+}
 #otherAch{
   padding: 0;
 }
