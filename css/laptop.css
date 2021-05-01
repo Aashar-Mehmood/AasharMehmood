@@ -1,0 +1,95 @@
+/* ====================== */
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 15px;
+  }
+  header {
+    padding: 30px 60px 30px 60px;
+  }
+  header nav {
+    width: 50%;
+  }
+
+  #projects .container div.desc ul li{
+    width: 90%;
+  }
+  #contact form>div{
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width:990px) {
+  main a{
+    width: 110px;
+  }
+  #projects .container div.desc div.btns{
+    margin-left: -15px;
+    justify-content: space-evenly;
+    width: 270px;
+  }
+  
+}
+
+
+
+/* ======================= */
+
+/* For devices below 768px  */
+
+/* ====================== */
+
+@media screen and (max-width:768px){
+  main a{
+    width: 140px;
+  }
+  
+  #about1 div{
+    max-width: 86%;
+  }
+  #projects .container, #projects .container:nth-child(even){
+    flex-flow: column;
+  }
+  #projects .container>div{
+    width: 90%;
+    margin: 20px auto;
+    height: 400px;
+  }
+  #projects .container:nth-child(even) div.desc div.arrow{
+    display: none;
+  }
+  #projects .container div.arrow{
+    display: none;
+  }
+  #projects .container div.desc div.btns{
+    margin-left: -22px;
+    justify-content: space-evenly;
+    width: 350px;
+  }
+  #contact form>div{
+    width: 80%;
+  }
+  footer {
+    flex-wrap: wrap;
+    
+  }
+  footer div{
+    width: 46%;
+    margin: auto;
+  }
+  footer div.aboutMe, #otherAch{
+    width: 80%;
+  }
+  #otherAch{
+    margin: 0;
+  }
+  footer span{
+    position: fixed;
+    bottom: 5%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    line-height: 70px;
+    font-size: 70px;
+  }
+}
