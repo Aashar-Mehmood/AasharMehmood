@@ -18,6 +18,7 @@
   header > nav {
     display: none;
   }
+
   div.phoneNav {
     display: block;
     position: absolute;
@@ -61,21 +62,27 @@
     padding-left: 35px;
   }
 
+ 
       /* ======================= */
 
     /*       Main area         */
 
   /* ====================== */
 
-  main{
-    padding: 15px;
-  }
+  
   main section{
-    padding: 10px;
+    padding: 20px;
+  }
+  #about1{
+    padding: 60px 30px;
   }
   #about1 div{
     max-width: 100%;
     text-align: left;
+  }
+  #about1 div div{
+    position: relative;
+    left: -15px;
   }
   #about1 div h1{
     font-size: 2rem;
@@ -91,17 +98,19 @@
    /*      Projects area      */ 
 
   /* ====================== */
-
+  #projects{
+    margin: 0;
+  }
+  #projects > h2{
+    margin: 20px 0;
+  }
   #projects .container{
-    border:none;
+    padding: 20px;
   }
   #projects .container>div{
     width: 100%;
   }
-  #projects .container:nth-child(odd) div.desc{
-    height: auto;
-    padding-left: 30px;
-  }
+
   #projects .container div.desc{
     height: auto;
   }
@@ -109,7 +118,10 @@
     margin: 25px 0;
   }
   #projects .container div.desc div.btns{
-    margin: 25px 0px 25px -20px;
+    flex-flow: column;
+    height: 120px;
+    justify-content: space-between;
+    margin: 25px 0px;
   }
 
   #contact {
@@ -143,10 +155,7 @@
 
 /* ================== */
 
-@media screen and (max-width:320px) {
-  #about1{
-    height:450px;
-  }
+@media screen and (max-width:360px) {
   #about1 div h1{
     font-size: 1.8rem;
   }
@@ -157,11 +166,14 @@
     flex-flow:column;
     height: 130px;
     margin-left: 50px;
+    justify-content: space-between;
   }
   #projects .container{
-    margin-bottom: 25px;
+    margin-bottom: 70px;
     padding:0;
+    border:none;
   }
+
   #projects .container div.desc{
     padding: 10px;
     height: auto;

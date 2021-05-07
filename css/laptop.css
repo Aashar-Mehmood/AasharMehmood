@@ -1,15 +1,18 @@
 /* ====================== */
 @media screen and (max-width: 1024px) {
-  main {
-    padding: 15px;
-  }
   header {
     padding: 30px 60px 30px 60px;
   }
   header nav {
     width: 50%;
   }
-
+  main section{
+    padding: 20px;
+  }
+  #projects .container{
+    width: 46%;
+    padding: 20px;
+  }
   #projects .container div.desc ul li{
     width: 90%;
   }
@@ -43,24 +46,24 @@
   main a{
     width: 140px;
   }
-  
+  main section{
+    padding: 20px 50px;
+  }
   #about1 div{
     max-width: 86%;
   }
-  #projects .container, #projects .container:nth-child(even){
+  
+  #projects, #projects .container{
     flex-flow: column;
   }
+  #projects .container{
+    width: 100%;
+    padding: 40px;
+  }
   #projects .container>div{
-    width: 90%;
-    margin: 20px auto;
     height: 400px;
   }
-  #projects .container:nth-child(even) div.desc div.arrow{
-    display: none;
-  }
-  #projects .container div.arrow{
-    display: none;
-  }
+
   #projects .container div.desc div.btns{
     margin-left: -22px;
     justify-content: space-evenly;
