@@ -49,4 +49,15 @@ goToTop.addEventListener('click', ()=>{
   document.documentElement.scrollTop=0;
 });
 
+//text animation
+const h1 = document.querySelector('.h1');
+const h2 = document.querySelectorAll('.h2');
+setTimeout(() => {
+  h1.classList.add('animate');
+}, 1000);
+setTimeout(() => {
+  h2.forEach((elem)=>{
+    elem.classList.add('animate');
+  });
+}, 1500);
 

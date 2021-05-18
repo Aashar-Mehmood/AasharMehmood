@@ -139,6 +139,12 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
   }
+  footer i{
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -151,11 +157,15 @@
 
 /* =====================*/
 
-/* Devices below 320px */
+/* Devices below 360px */
 
 /* ================== */
 
 @media screen and (max-width:360px) {
+  main a, button, #otherAch a{
+    font-size: 18px;
+  }
+
   #about1 div h1{
     font-size: 1.8rem;
   }
@@ -194,5 +204,11 @@
   footer span{
     top: 55%;
     right: 35px;
+  }
+}
+
+@media screen and (max-width:320px){
+  #about1 div div{
+    left :5px;
   }
 }
