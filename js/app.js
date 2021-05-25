@@ -54,10 +54,10 @@ const h1 = document.querySelector('.h1');
 const h2 = document.querySelectorAll('.h2');
 setTimeout(() => {
   h1.classList.add('animate');
-}, 800);
+}, 400);
 setTimeout(() => {
   h2.forEach((elem)=>{
     elem.classList.add('animate');
   });
-}, 1200);
+}, 800);
 
