@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/laptop.css" media="(max-width: 1024px)">
   <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
   <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 </head>
 
 <body>
@@ -107,7 +108,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="demo youtube" data-embed="Wog9STcwXt4">
           <div class="play-button">
 
@@ -132,7 +133,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="demo youtube" data-embed="tE1pcqAJW9w">
 
           <div class="play-button">
@@ -155,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="demo youtube" data-embed="n92NMTZsexU">
 
           <div class="play-button">
@@ -178,7 +179,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="demo youtube" data-embed="F2Jpsx8UGw4">
 
           <div class="play-button">
@@ -200,7 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="demo youtube" data-embed="kSoPUyBrwDM">
           <div class="play-button">
 
@@ -320,6 +321,12 @@
   <script src="https://kit.fontawesome.com/0838986353.js" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="js/youtube.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:250,
+      duration:800
+    });
+  </script>
   </body>
-
 </html>
