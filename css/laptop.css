@@ -9,6 +9,12 @@
   main section{
     padding: 20px;
   }
+  #about1>div{
+    padding: 30px 60px;
+  }
+  #about1 img{
+    height: 360px;
+  }
   #projects .container{
     width: 46%;
     padding: 20px;
@@ -34,12 +40,8 @@
   
 }
 
-
-
 /* ======================= */
-
 /* For devices below 768px  */
-
 /* ====================== */
 
 @media screen and (max-width:768px){
@@ -49,9 +51,10 @@
   main section{
     padding: 20px 50px;
   }
-  #about1 div{
-    max-width: 86%;
+  #about1 img{
+    display: none;
   }
+
   
   #projects, #projects .container{
     flex-flow: column;

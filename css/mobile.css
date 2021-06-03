@@ -27,14 +27,14 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.6s ease-in;
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease-in;
   }
   div.phoneNav.active {
     z-index: 4;
-    transform: scale(1);
+    transform: translateX(0);
   }
+
   div.phoneNav div {
     position: relative;
     display: flex;
@@ -61,28 +61,19 @@
   div.phoneNav ul li {
     padding-left: 35px;
   }
-
- 
       /* ======================= */
-
     /*       Main area         */
-
   /* ====================== */
-
-  
   main section{
     padding: 20px;
   }
-  #about1{
-    padding: 60px 30px;
-  }
+
   #about1 div{
     max-width: 100%;
     text-align: left;
   }
   #about1 div div{
     position: relative;
-    left: -15px;
   }
   #about1 div h1{
     font-size: 2rem;
@@ -94,9 +85,7 @@
 }
 
     /* ======================= */
-
    /*      Projects area      */ 
-
   /* ====================== */
   #projects{
     margin: 0;
@@ -156,16 +145,19 @@
 }
 
 /* =====================*/
-
 /* Devices below 360px */
-
 /* ================== */
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
   main a, button, #otherAch a{
     font-size: 18px;
   }
-
+  #about1{
+    padding: 0;
+  }
+  #about1>div{
+    padding: 30px;
+  }
   #about1 div h1{
     font-size: 1.8rem;
   }
@@ -175,7 +167,6 @@
   #about1 div div {
     flex-flow:column;
     height: 130px;
-    margin-left: 50px;
     justify-content: space-between;
   }
   #projects .container{

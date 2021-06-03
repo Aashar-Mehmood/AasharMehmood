@@ -8,6 +8,9 @@ html, body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+html{
+  font-size: 16px;
+}
 body {
   font-family: "Times New Roman", Times, serif;
   width: 100%;
@@ -103,7 +106,7 @@ header ul li {
 }
 
 .h1.animate{
-  clip-path: polygon(0 0, 100% 1%, 100% 100%, 1% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 
 .h2.animate{
@@ -149,36 +152,39 @@ main {
 }
 main section {
   display: flex;
-  padding: 40px;
+  padding:40px;
+}
+#about1 img{
+  height: 400px;
 }
 
 #about1 {
   min-height: 320px;
   background-color: #ffffff1c;
-  padding: 60px 0;
+  padding: 20px 0;
   border-bottom: 1px solid white;
-
 }
+
 #about1>div {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  max-width: 60%;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
+  padding:0 60px 0 120px;
 }
+
 #about1 h1 {
   line-height: 3rem;
   font-size: 2.5rem;
+  margin-bottom: 0;
 }
+
 #about1 h2 {
   font-size: 1.7rem;
   margin: 15px 0 25px 0;
 }
 #about1 div div{
   display: flex;
-  min-width: 320px;
+  width: 340px;
   justify-content: space-between;
 }
 
@@ -301,6 +307,7 @@ main section {
   margin-top: 12px;
   font-size: 17px;
 }
+
 #projects .container div.desc div.btns {
   width:300px;
   display: flex;
