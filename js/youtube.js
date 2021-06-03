@@ -8,6 +8,7 @@
     
     var image = new Image();
         image.src = source;
+        image.loading = 'lazy';
         image.addEventListener( "load", function() {
           youtube[ i ].appendChild( image );
         }( i ) );

@@ -47,34 +47,3 @@ goToTop.addEventListener('click', ()=>{
   document.body.scrollTop=0;
   document.documentElement.scrollTop=0;
 });
-
-let scrolling = false;
-
-window.onscroll = () => {
-  scrolling = true;
-};
-
-setInterval(() => {
-  if (scrolling) {
-    scrolling = false;
-    scrollFunction();
-  }
-}, 2000);
-
-
-
-function scrollFunction() {
-  if (document.body.clientWidth <= 768) {
-    // get total scroll-able height of body.
-    const scrollHeight = document.body.scrollHeight;
-    // when scrollTop becomes greater than 1/4 of total height show the icon
-    if (document.body.scrollTop >= (scrollHeight / 4) || document.documentElement.scrollTop >= (scrollHeight / 4)) {
-      goToTop.style.display = "block";
-    }
-    else {
-      goToTop.style.display = "none";
-    }
-  }
-}
-
-// https://youtu.be/34QKTBYloio

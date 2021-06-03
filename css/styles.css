@@ -286,8 +286,7 @@ main section {
   right: 0;
 }
 
-
-#projects .container div.desc {
+#projects div.desc {
   display: flex;
   flex-flow: column;
   padding: 20px 30px;
@@ -299,28 +298,24 @@ main section {
   margin-top: 40px;
 }
 
-#projects .container div.desc h2{
+#projects div.desc h2{
   margin: 0;
 }
 
-#projects .container div.desc ul li {
+#projects div.desc ul li {
   margin-top: 12px;
   font-size: 17px;
 }
 
-#projects .container div.desc div.btns {
+#projects div.btns {
   width:300px;
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
 }
 
-
-
 /*=============================================*/
-
 /* contact area styling */
-
 /*=============================================*/
 
 #contact{
@@ -368,9 +363,7 @@ main section {
 }
 
 /* ====================== */
-
 /*        footer area    */
-
 /* ==================== */
 
 footer{
@@ -433,14 +426,14 @@ footer i{
   background-color: #fff;
   padding-top: 10px;
   box-shadow: 0px 0px 15px 6px;
-  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow opacity 0.4s ease-in-out;
 }
+
+
+
 footer i:hover{
   box-shadow:0px 0px 15px 12px;
 }
 #otherAch{
   padding: 0;
 }
-
-
-

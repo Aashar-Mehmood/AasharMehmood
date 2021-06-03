@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Aashar Portfolio</title>
   <base target="_blank">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/laptop.css" media="(max-width: 1024px)">
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/laptop.min.css" media="(max-width: 1024px)">
+  <link rel="stylesheet" href="css/mobile.min.css" media="(max-width: 480px)">
   <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -116,7 +116,7 @@
 
         </div>
       </div>
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="demo youtube" data-embed="qVutqN5LErw">
           <div class="play-button">
 
@@ -138,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="container" data-aos="fade-right">
+      <div class="container" data-aos="fade-left">
         <div class="demo youtube" data-embed="Wog9STcwXt4">
           <div class="play-button">
 
@@ -163,7 +163,7 @@
         </div>
       </div>
 
-      <div class="container" data-aos="fade-left">
+      <div class="container" data-aos="fade-right" id="trigger-icon">
         <div class="demo youtube" data-embed="tE1pcqAJW9w">
 
           <div class="play-button">
@@ -186,7 +186,7 @@
           </div>
         </div>
       </div>
-      <div class="container" data-aos="fade-right">
+      <div class="container" data-aos="fade-left">
         <div class="demo youtube" data-embed="n92NMTZsexU">
 
           <div class="play-button">
@@ -209,7 +209,7 @@
         </div>
       </div>
 
-      <div class="container" data-aos="fade-left">
+      <div class="container" data-aos="fade-right">
         <div class="demo youtube" data-embed="F2Jpsx8UGw4">
 
           <div class="play-button">
@@ -347,11 +347,17 @@
         </li>
       </ul>
     </div>
-    <span id="goTop">^</span>
+    <span 
+      data-aos="fade-left"
+      data-aos-anchor = "#trigger-icon" 
+      data-aos-anchor-placement="top-top"
+      id="goTop"
+    >^
+    </span>
   </footer>
   <script src="https://kit.fontawesome.com/0838986353.js" crossorigin="anonymous" async></script>
-  <script src="js/app.js" async media></script>
-  <script src="js/youtube.js" async></script>
+  <script src="js/app.min.js" async media></script>
+  <script src="js/youtube.min.js" async></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({

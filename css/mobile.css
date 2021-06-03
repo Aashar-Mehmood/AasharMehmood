@@ -27,6 +27,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 40px;
+    height: 360px;
     transform: translateX(-100vw);
     transition: transform 0.5s ease-in;
   }
@@ -201,5 +202,11 @@
 @media screen and (max-width:320px){
   #about1 div div{
     left :5px;
+  }
+  footer div{
+    width: 100%;
+  }
+  footer div ul{
+    grid-column-gap:10px;
   }
 }
