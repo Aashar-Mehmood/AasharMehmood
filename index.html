@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/laptop.min.css" media="(max-width: 1024px)">
   <link rel="stylesheet" href="css/mobile.min.css" media="(max-width: 480px)">
   <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="(min-width: 768px)" />
 </head>
 
 <body>
@@ -314,14 +314,15 @@
     >^
     </span>
   </footer>
-  <script src="https://kit.fontawesome.com/0838986353.js" crossorigin="anonymous" async></script>
-  <script src="js/app.min.js" async media></script>
+  <script src="https://kit.fontawesome.com/0838986353.js" crossorigin="anonymous" async defer></script>
+  <script src="js/app.min.js" async defer></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
+      disable:'mobile',
       offset: 350,
       duration: 800,
-      delay: 500
+      delay: 300
     });
   </script>
 </body>
