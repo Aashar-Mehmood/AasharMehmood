@@ -1,14 +1,2 @@
-#ignored files
-#if files are already added first untrack them
-#using "git rm --cached fileName"
-#
-#delete from file system as well as repo 
-#using "git rm fileName"
-css/styles.css
-css/laptop.css
-css/mobile.css
-css/projects.css
-css/projects_laptop.css
-css/projects_mobile.css
-js/app.js
-js/youtube.js
+css/*
+!css/*.min.css

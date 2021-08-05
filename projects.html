@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <base target="_blank" />
-    <link rel="stylesheet" href="css/projects.min.css" />
-    <link rel="stylesheet" href="css/projects_laptop.min.css" media="(max-width: 1024px)" />
-    <link rel="stylesheet" href="css/projects_mobile.min.css" media="(max-width: 480px)" />
+    <link rel="stylesheet" href="css/projects_mobile.min.css" />
+    <link rel="stylesheet" href="css/projects_tablet.min.css" media="(min-width:700px)" />
+    <link rel="stylesheet" href="css/projects_laptop.min.css" media="(min-width: 1440px)" />
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="(min-width: 768px)" />
   </head>
 
   <body>
     <header>
-      <h2 class="h2"><a href="index.html" target="_blank">Aashar</a></h2>
-      <nav>
+      <h2 class="h2"><a href="index.html" target="_self">Aashar</a></h2>
+      <nav class="phoneNav">
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </label>
         <ul>
           <li><a href="index.html#services" target="_blank">Services</a></li>
           <li><a href="#projects" target="_blank">Projects</a></li>
@@ -24,22 +28,6 @@
           <li><a href="#about" target="_blank">About</a></li>
         </ul>
       </nav>
-      <img id="hamburger" src="images/icon-hamburger.svg" alt="ShowMenu" />
-      <div class="phoneNav">
-        <div>
-          <h2>Aashar</h2>
-          <img src="images/icon-close-menu.svg" alt="Close" />
-          <ul>
-            <li><a href="index.html#services" target="_blank">Services</a></li>
-            <hr />
-            <li><a href="#projects" target="_blank">Projects</a></li>
-            <hr />
-            <li><a href="index.html#contact" target="_blank">Contact</a></li>
-            <hr />
-            <li><a href="#about" target="_blank">About</a></li>
-          </ul>
-        </div>
-      </div>
     </header>
     <main>
       <section id="projects">
@@ -77,7 +65,7 @@
             </ul>
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/JavaScript-ToDoApp">View Code</a>
-              <a href="https://aashar-mehmood.github.io/JavaScript-ToDoApp">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/JavaScript-ToDoApp">Launch</a>
             </div>
           </div>
         </div>
@@ -111,7 +99,7 @@
             </ul>
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator">View Code</a>
-              <a href="https://aashar-mehmood.github.io/JavaScript-Calculator">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/JavaScript-Calculator">Launch</a>
             </div>
           </div>
         </div>
@@ -131,7 +119,7 @@
 
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/Crowd-Funding-Website">View Code</a>
-              <a href="https://aashar-mehmood.github.io/Crowd-Funding-Website">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/Crowd-Funding-Website">Launch</a>
             </div>
           </div>
         </div>
@@ -149,7 +137,7 @@
             </ul>
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/OnlineClothStore">View Code</a>
-              <a href="https://aashar-mehmood.github.io/OnlineClothStore">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/OnlineClothStore">Launch</a>
             </div>
           </div>
         </div>
@@ -167,7 +155,7 @@
             </ul>
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/JavaScript-SlideShow">View Code</a>
-              <a href="https://aashar-mehmood.github.io/JavaScript-SlideShow">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/JavaScript-SlideShow">Launch</a>
             </div>
           </div>
         </div>
@@ -185,7 +173,7 @@
             </ul>
             <div class="btns">
               <a href="https://github.com/Aashar-Mehmood/JavaScript-ToggleNavBar">View Code</a>
-              <a href="https://aashar-mehmood.github.io/JavaScript-ToggleNavBar">Launch Project</a>
+              <a href="https://aashar-mehmood.github.io/JavaScript-ToggleNavBar">Launch</a>
             </div>
           </div>
         </div>
@@ -193,7 +181,7 @@
     </main>
     <footer id="about">
       <div class="aboutMe">
-        <h2>More About Me</h2>
+        <h2>About Me</h2>
         <p>
           I am currently a student of Bs. Computer Engineering at University of Engineering and Technology Taxila,
           Pakistan. I have learned the front end development on my own and currently my focus is on learning backend
@@ -201,31 +189,22 @@
           Developer.
         </p>
         <br />
-        <div id="otherAch">
-          <h2>Other Achivements</h2>
-          <p>Responsive Web Design Certification From FreeCodeCamp</p>
-          <a href="https://freecodecamp.org/certification/aashar_mehmood/responsive-web-design">View Certificate</a>
-          <p>Some Work on Codepen</p>
-          <a href="https://codepen.io/aashar-mehmood">Codepen Profile</a>
-        </div>
       </div>
       <div class="exp">
-        <h3>Following are some of my expertise</h3>
+        <h2>Expertise</h2>
         <ul>
           <li>
-            <i class="fab fa-php" aria-hidden="true" style="color: #7377ad"></i>
+            <i class="fab fa-php" style="color: #7377ad"></i>
           </li>
           <li>
-            <i class="fa fa-database" aria-hidden="true" style="color: #29a6c3"></i>
+            <i class="fa fa-database" style="color: #29a6c3"></i>
           </li>
           <li>
             <i class="fab fa-js" style="color: #e4d417"></i>
           </li>
           <li>
-            <i class="fa fa-html5" aria-hidden="true" style="color: #f63"></i>
+            <i class="fab fa-html5" style="color: #f63"></i>
           </li>
-        </ul>
-        <ul>
           <li>
             <i class="fa fa-css3" style="color: #29f"></i>
           </li>
@@ -238,7 +217,7 @@
         </ul>
       </div>
       <div class="links">
-        <h3>Join me on social media or other tech platforms</h3>
+        <h2>Social Links</h2>
         <ul>
           <li>
             <a href="https://github.com/Aashar-Mehmood">
@@ -269,7 +248,6 @@
       </div>
     </footer>
     <script src="https://kit.fontawesome.com/0838986353.js" crossorigin="anonymous" async defer></script>
-    <script src="js/app.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
