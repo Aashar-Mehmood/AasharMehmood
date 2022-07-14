@@ -153,7 +153,7 @@ const data1 = `<h2>Some of Project Samples</h2>
       <a href="https://github.com/Aashar-Mehmood/Dynamic-Blog-Website"
         >View Code</a
       >
-      <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a>
+      <a href="http://starshare.infinityfreeapp.com/myblog/">Launch</a>
     </div>
   </div>
 </div>
