@@ -1,0 +1,69 @@
+html {
+  font-size: 20px;
+}
+header {
+  padding: 1.2rem 2rem;
+}
+header nav ul {
+  width: 600px;
+}
+header nav ul li {
+  position: relative;
+  margin: 0 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+header nav ul li a {
+  padding: 20px 0;
+}
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+header nav ul li:hover::after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+main section#about1 {
+  padding: 4rem 5rem;
+}
+main #services > div {
+  width: 22%;
+  box-shadow: 2px 2px 10px 1px grey;
+}
+main #projects > div {
+  height: 820px;
+  padding: 2rem 2.5rem;
+  box-shadow: 2px 2px 10px 1px grey;
+}
+main #contact form {
+  width: 54%;
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+footer > * {
+  width: 30%;
+}
+footer,
+main {
+  position: relative;
+  top: 110px;
+}
