@@ -51,6 +51,7 @@
     height: 2.6rem;
     line-height: 2.6rem;
   }
+
   main #projects,
   main #services {
     display: -webkit-box;
@@ -68,6 +69,7 @@
   main #projects > div,
   main #services > div {
     width: 42%;
+    box-shadow: 2px 2px 10px 1px grey;
   }
   main #services {
     -webkit-box-pack: justify;
@@ -160,8 +162,8 @@ footer ul i {
   height: 50px;
   font-size: 30px;
 }
-footer,
+/* footer,
 main {
   position: relative;
   top: 102px;
-}
+} */

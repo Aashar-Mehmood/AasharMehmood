@@ -117,26 +117,34 @@ const data = `<div class="container" data-aos="fade-right">
 
 const data1 = `<h2>Some of Project Samples</h2>
 <div class="container" data-aos="fade-right">
-  <img src="images/starshare.png" alt="Star Share" />
-  <div class="desc">
-    <h2>StarShare</h2>
-    <h3>Music Platform for stars, organizers and suppliers</h3>
-    <ul>
-      <li>Signup/Login Functionality with admin Panel</li>
-      <li>Songs buy, sell, upload, edit, unpublish features</li>
-      <li>Organize events, invite stars and suppliers</li>
-      <li>Buy/sell tickets and musical instruments</li>
-      <li>View, edit profile</li>
-      <li>Send quotes to suppliers and stars</li>
-    </ul>
+          <img src="images/starshare.png" alt="Star Share" />
+          <div class="desc">
+            <h2>StarShare</h2>
+            <h3>Music Platform for stars, organizers and suppliers</h3>
+            <ul>
+              <strong>User Login</strong>
+              <li>Email : ali@gmail.com</li>
+              <li>Password : ali</li>
+              <strong>Admin Login</strong>
+              <li>Email: aasharmehmood3@gmail.com</li>
+              <li>Password : aashar</li>
+            </ul>
 
-    <div class="btns">
-      <a href="http://starshare.infinityfreeapp.com/starshare/"
-        >Launch</a
-      >
-    </div>
-  </div>
-</div>
+            <div class="btns">
+              <a
+                href="https://github.com/Aashar-Mehmood/starshare"
+                target="_blank"
+                >View Code</a
+              >
+              <a
+                href="https://starshare-web.000webhostapp.com/starshare/"
+                target="_blank"
+                >Launch</a
+              >
+              <!-- <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a> -->
+            </div>
+          </div>
+        </div>
 <div class="container" data-aos="fade-left">
   <img src="images/blogWebsite.png" alt="Blog Website" />
   <div class="desc">

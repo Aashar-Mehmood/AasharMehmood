@@ -160,8 +160,13 @@ header #click:checked ~ ul {
 header #click:checked ~ label.menu-btn {
   color: #fff;
 }
-main {
+/* main {
   background: #d6ffee;
+} */
+main #about1 {
+  background-image: url("../images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 main #about1 div {
   margin: 30px 0;
@@ -188,6 +193,12 @@ main #about1 a:hover {
 main section {
   padding: 1.35rem 1.55rem;
 }
+
+main #projects,
+main #showLessMore {
+  background-color: #d6ffee;
+}
+
 main #contact img,
 main #projects img,
 main #services img {
@@ -231,6 +242,9 @@ main #services div a:hover {
   );
   background: linear-gradient(to left, #7fffd4, #78fa78);
 }
+main #projects .desc h2 {
+  margin-top: 0;
+}
 main #projects div h2 {
   text-align: left;
 }
@@ -253,14 +267,18 @@ main #projects > div a:hover {
   );
   background: linear-gradient(to left, #7fffd4, #78fa78);
 }
+
 main a#lessProj,
 main a#moreProj {
+  height: auto;
   width: 150px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 30px;
   transform: translateX(-50%);
+  margin: 0;
+  padding: 0.4rem;
 }
 main a#lessProj:hover,
 main a#moreProj:hover {

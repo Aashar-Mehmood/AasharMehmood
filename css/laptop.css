@@ -37,17 +37,16 @@ header nav ul li:hover::after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
 main section#about1 {
   padding: 4rem 5rem;
 }
 main #services > div {
   width: 22%;
-  box-shadow: 2px 2px 10px 1px grey;
 }
 main #projects > div {
   height: 820px;
   padding: 2rem 2.5rem;
-  box-shadow: 2px 2px 10px 1px grey;
 }
 main #contact form {
   width: 54%;
@@ -62,8 +61,8 @@ footer {
 footer > * {
   width: 30%;
 }
-footer,
+/* footer,
 main {
   position: relative;
   top: 110px;
-}
+} */
