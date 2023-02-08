@@ -45,8 +45,8 @@ main #services > div {
   width: 22%;
 }
 main #projects > div {
-  height: 820px;
-  padding: 2rem 2.5rem;
+  width: 26%;
+  padding: 1.6rem 2rem;
 }
 main #contact form {
   width: 54%;

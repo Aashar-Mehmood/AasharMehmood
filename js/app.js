@@ -1,36 +1,11 @@
-const data = `<div class="container" data-aos="fade-right">
-<img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
-<div class="desc">
-  <h2>Weather App</h2>
-  <h3>Weather App using open Weather API</h3>
-  <ul>
-    <li>Responsive Design</li>
-    <li>Changes background based on temperature values</li>
-    <li>Also shows longitudes and latitudes</li>
-    <li>
-      User can enter as well as dirctly select the area from a
-      dropdown
-    </li>
-  </ul>
-  <div class="btns">
-    <a href="https://github.com/Aashar-Mehmood/JavaScript-WeatherApp"
-      >View Code</a
-    >
-    <a href="https://youtu.be/kSoPUyBrwDM">Watch Demo</a>
-  </div>
-</div>
-</div>
+const data = `
 <div class="container" data-aos="fade-left">
 <img src="images/calculator-min.jpg" alt="JavaScript calculator" />
 <div class="desc">
   <h2>Calculator App</h2>
-  <h3>Simple JavaScript Calculator</h3>
-  <ul>
-    <li>Implemented using two different approaches</li>
-    <li>Responsive Design</li>
-    <li>Functionality of delete and clear</li>
-    <li>Used HTML, CSS and JavaScript</li>
-  </ul>
+  <h3>Calculator app usign vanilla Js and CSS</h3>
+  <br />
+  
   <div class="btns">
     <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
       >View Code</a
@@ -42,17 +17,12 @@ const data = `<div class="container" data-aos="fade-right">
 </div>
 </div>
 
-<div class="container" data-aos="fade-right">
+<div class="container" data-aos="fade-up">
 <img src="images/crowdFunding-min.jpg" alt="Crowd Funding Website" />
 <div class="desc">
-  <h2>Crowd Funding Website</h2>
+  <h2>Crowd Funding </h2>
   <h3>Website challenge from Frontend Mentor</h3>
-  <ul>
-    <li>Responsive design</li>
-    <li>Pledge selection view on click</li>
-    <li>Toggle whether or not the product is bookmarked</li>
-    <li>Used HTML, CSS and little bit JavaScript</li>
-  </ul>
+  <br />
 
   <div class="btns">
     <a href="https://github.com/Aashar-Mehmood/Crowd-Funding-Website"
@@ -69,15 +39,9 @@ const data = `<div class="container" data-aos="fade-right">
 <img src="images/slider-min.jpg" alt="Responsive Image Slider" />
 <div class="desc">
   <h2>Image Slider</h2>
-  <ul>
-    <li>Fully Responsive design</li>
-    <li>Enable/Disable auto scroll option</li>
-    <li>Include controls for next slides</li>
-    <li>
-      Used transform and opacity properties for transition effects
-    </li>
-    <li>Made with HML, CSS and JavaScript</li>
-  </ul>
+  <h3>Vanilla Js Image Slider</h3>
+  <br />
+  <br />
   <div class="btns">
     <a href="https://github.com/Aashar-Mehmood/JavaScript-SlideShow"
       >View Code</a
@@ -89,93 +53,81 @@ const data = `<div class="container" data-aos="fade-right">
 </div>
 </div>
 
-<div class="container" data-aos="fade-up">
-<img
-  src="images/toggleNavigation-min.jpg"
-  alt="Toggleable navigation bar"
-/>
-<div class="desc">
-  <h2>Toggleable navigation bar</h2>
-  <ul>
-    <li>A top navigation bar</li>
-    <li>Changing main area content</li>
-    <li>Changing title, description and Background images</li>
-    <li>Fully responsive and custom design</li>
-    <li>Used JavaScript objects to achive this.</li>
-  </ul>
-  <div class="btns">
-    <a
-      href="https://github.com/Aashar-Mehmood/JavaScript-ToggleNavBar"
-      >View Code</a
-    >
-    <a href="https://aashar-mehmood.github.io/JavaScript-ToggleNavBar"
-      >Launch</a
-    >
-  </div>
-</div>
-</div>`;
+`;
 
 const data1 = `<h2>Some of Project Samples</h2>
 <div class="container" data-aos="fade-right">
-          <img src="images/starshare.png" alt="Star Share" />
-          <div class="desc">
-            <h2>StarShare</h2>
-            <h3>Music Platform for stars, organizers and suppliers</h3>
-            <ul>
-              <strong>User Login</strong>
-              <li>Email : ali@gmail.com</li>
-              <li>Password : ali</li>
-              <strong>Admin Login</strong>
-              <li>Email: aasharmehmood3@gmail.com</li>
-              <li>Password : aashar</li>
-            </ul>
+  <img src="images/starshare.png" alt="Star Share" />
+  <div class="desc">
+    <h2>StarShare</h2>
+    <h3>Music Platform for stars, organizers and suppliers</h3>
+   
 
-            <div class="btns">
-              <a
-                href="https://github.com/Aashar-Mehmood/starshare"
-                target="_blank"
-                >View Code</a
-              >
-              <a
-                href="https://starshare-web.000webhostapp.com/starshare/"
-                target="_blank"
-                >Launch</a
-              >
-              <!-- <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a> -->
-            </div>
-          </div>
-        </div>
-<div class="container" data-aos="fade-left">
+    <div class="btns">
+      <a
+        href="https://github.com/Aashar-Mehmood/starshare"
+        target="_blank"
+        >View Code</a
+      >
+      <a
+        href="https://starshare-web.000webhostapp.com/starshare/"
+        target="_blank"
+        >Launch</a
+      >
+      <!-- <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a> -->
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-down">
   <img src="images/blogWebsite.png" alt="Blog Website" />
   <div class="desc">
     <h2>Blog Website</h2>
-    <h3>Dynamic Blog Website using PHP, MYSQL, jQuery</h3>
-    <ul>
-      <li>Signup/Login Functionality</li>
-      <li>Server Side Form Validation</li>
-      <li>Show More/Few Blogs</li>
-      <li>Create Blogs after Logging In</li>
-    </ul>
+    <h3>Blog Website using PHP, MYSQL, jQuery</h3>
+    
 
     <div class="btns">
       <a href="https://github.com/Aashar-Mehmood/Dynamic-Blog-Website"
         >View Code</a
       >
-      <a href="http://starshare.infinityfreeapp.com/myblog/">Launch</a>
+      <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a>
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-left">
+  <img src="images/Quizzical.png" alt="Quizzical" />
+  <div class="desc">
+    <h2>Quizzical</h2>
+    <h3>Quiz App using React and OTDB API</h3>
+    
+
+    <div class="btns">
+      <a href="https://github.com/Aashar-Mehmood/react-quiz"
+        >View Code</a
+      >
+      <a href="https://react-quiz-scrimba.netlify.app/">Launch</a>
     </div>
   </div>
 </div>
 <div class="container" data-aos="fade-right">
+  <img src="images/tenzies.png" alt="tenzies" />
+  <div class="desc">
+    <h2>Tenzies</h2>
+    <h3>Tenzies Game using React and Local Storage</h3>
+    
+    <div class="btns">
+      <a href="https://github.com/Aashar-Mehmood/react-tenzies-game"
+        >View Code</a
+      >
+      <a href="https://aashar-mehmood.github.io/react-tenzies-game/">Launch</a>
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-up">
   <img src="images/fetchMovies-min.jpg" alt="Movies Fetching Website" />
   <div class="desc">
-    <h2>Fetch Trending Movies</h2>
+    <h2>Movies Website</h2>
     <h3>Movies Website using The Movie Database API</h3>
-    <ul>
-      <li>Fetches daily as well as weekly trending Movies</li>
-      <li>Iterates over result and creates DOM Elements</li>
-      <li>Also loads poster of movies using movies id</li>
-      <li>Watch trailer of particular Movie</li>
-    </ul>
+
 
     <div class="btns">
       <a
@@ -191,16 +143,7 @@ const data1 = `<h2>Some of Project Samples</h2>
   <div class="desc">
     <h2>Weather App</h2>
     <h3>Weather App using open Weather API</h3>
-    <ul>
-      <li>Responsive Design</li>
-      <li>Changes background based on temperature values</li>
-      <li>Also shows longitudes and latitudes</li>
-      <li>
-        User can enter as well as dirctly select the area from a
-        dropdown
-      </li>
-      <li style="visibility: hidden">.</li>
-    </ul>
+    
     <div class="btns">
       <a href="https://github.com/Aashar-Mehmood/JavaScript-WeatherApp"
         >View Code</a

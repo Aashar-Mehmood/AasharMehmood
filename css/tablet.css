@@ -96,12 +96,13 @@
     height: 200px;
   }
   main #projects > div {
-    height: 720px;
     position: relative;
   }
   main #projects > div div.btns {
-    position: absolute;
-    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   main #projects a#moreProj {
     position: static;
