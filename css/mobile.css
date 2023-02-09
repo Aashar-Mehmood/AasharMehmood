@@ -191,7 +191,7 @@ main #about1 a:hover {
   background: linear-gradient(to left, #7fffd4, #78fa78);
 }
 main section {
-  padding: 1.35rem 1.55rem;
+  padding: 1.4rem 2.8rem;
 }
 
 main #projects,
@@ -321,11 +321,15 @@ main #contact div button:hover {
 }
 footer {
   padding: 1.35rem 1.55rem;
-  background-color: #f0f8ff;
+  background-color: #242424;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-footer p {
-  line-height: 1.5rem;
-}
+
+
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,6 +363,13 @@ main {
   position: relative;
   top: 67px;
 }
+
+@media screen and (min-width:320px) {
+  main section{
+    padding: 1.4rem;
+  }
+}
+
 @media screen and (min-width: 400px) {
   html {
     font-size: 17px;

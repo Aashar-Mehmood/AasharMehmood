@@ -4,8 +4,11 @@ html {
 header {
   padding: 1.2rem 2rem;
 }
+header h2{
+  margin-left: 1.8em;
+}
 header nav ul {
-  width: 600px;
+  width: 480px;
 }
 header nav ul li {
   position: relative;
@@ -41,8 +44,13 @@ header nav ul li:hover::after {
 main section#about1 {
   padding: 4rem 5rem;
 }
+
+main section#about1 > div{
+  flex:0.75;
+}
+
 main #services > div {
-  width: 22%;
+  width: 26%;
 }
 main #projects > div {
   width: 26%;
@@ -52,15 +60,14 @@ main #contact form {
   width: 54%;
 }
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-footer > * {
-  width: 30%;
+
+footer h3{
+  margin-top: 0;
 }
+
 /* footer,
 main {
   position: relative;
