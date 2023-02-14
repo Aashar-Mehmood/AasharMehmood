@@ -374,4 +374,18 @@ main {
   html {
     font-size: 17px;
   }
+  main #about1>div>div{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
+@media screen and (min-width: 520px) {
+  
+  main #about1>div>div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
