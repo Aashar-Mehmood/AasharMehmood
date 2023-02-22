@@ -123,21 +123,21 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-up">
-  <img src="images/fetchMovies-min.jpg" alt="Movies Fetching Website" />
-  <div class="desc">
-    <h2>Movies Website</h2>
-    <h3>Movies Website using The Movie Database API</h3>
+          <img src="images/multiStepForm.png" alt="React Multi Step Form" />
+          <div class="desc">
+            <h2>Multi Step Form</h2>
+            <h3>React Multi Step Form along with validation</h3>
+        
 
-
-    <div class="btns">
-      <a
-        href="https://github.com/Aashar-Mehmood/Movie-Database-API-Project"
-        >View Code</a
-      >
-      <a href="https://youtu.be/34QKTBYloio">Watch Demo</a>
-    </div>
-  </div>
-</div>
+            <div class="btns">
+              <a
+                href="https://github.com/Aashar-Mehmood/multi-step-form"
+                >View Code</a
+              >
+              <a href="https://multi-step-form-12.netlify.app/">Launch</a>
+            </div>
+          </div>
+        </div>
 <div class="container" data-aos="fade-left">
   <img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
   <div class="desc">
