@@ -1,40 +1,78 @@
 :root {
+  --t1-color: rgb(253, 253, 253);
+  --t1-bg: #110f13;
   --t1-header-bg: #100f13;
   --t1-header-color: #ffda87;
-  --t1-hero-bg: #11141b;
+  --t1-hero-bg: #313335;
+  --t1-sp-container: #313335;
+  --t1-btn-bg: #ffda87;
+  --t1-btn-color: var(--t1-bg);
 
+  --t1-btn-bg2: #ffda87;
+  --t1-btn-color2: #100f13;
+
+  --t1-services-bg: #110f13;
+  --t1-projects-bg: #110f13;
+  --t1-contact-bg: #313335;
+  --t1-footer-bg: var(--t1-projects-bg);
+
+  --t2-color: #110f13;
+  --t2-bg: rgb(246, 246, 246);
   --t2-header-bg: #6c63ff;
   --t2-header-color: whitesmoke;
-
+  --t2-hero-bg: var(--t2-bg);
+  --t2-sp-container: #fff;
   --t2-btn-bg: #6c63ff;
   --t2-btn-color: whitesmoke;
 
   --t2-btn-bg2: #bfe1f1;
   --t2-btn-color2: #100f13;
-
   --t2-services-bg: #e7f3f8;
   --t2-projects-bg: #f2f2f2;
+  --t2-contact-bg: #fff;
+  --t2-input-border: #00000050;
+  --t2-footer-bg: var(--t2-projects-bg);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --t-color: var(--t1-color);
+
     --t-header-bg: var(--t1-header-bg);
     --t-header-color: var(--t1-header-color);
+    --t-hero-bg: var(--t1-hero-bg);
+    --t-sp-container: var(--t1-sp-container);
+    --t-btn-bg: var(--t1-btn-bg);
+    --t-btn-color: var(--t1-btn-color);
+
+    --t-btn-bg2: var(--t1-btn-bg2);
+    --t-btn-color2: var(--t1-btn-color2);
+    --t-services-bg: var(--t1-services-bg);
+    --t-projects-bg: var(--t1-projects-bg);
+    --t-contact-bg: var(--t1-contact-bg);
+
+    --t-input-border: var(--t1-input-border);
+    --t-footer-bg: var(--t1-footer-bg);
   }
 }
 @media (prefers-color-scheme: light) {
   :root {
+    --t-color: var(--t2-color);
+    --t-bg: var(--t2-bg);
+    --t-hero-bg: var(--t2-hero-bg);
     --t-header-bg: var(--t2-header-bg);
     --t-header-color: var(--t2-header-color);
+    --t-sp-container: var(--t2-sp-container);
 
     --t-btn-bg: var(--t2-btn-bg);
     --t-btn-color: var(--t2-btn-color);
-
     --t-btn-bg2: var(--t2-btn-bg2);
     --t-btn-color2: var(--t2-btn-color2);
-
+    --t-contact-bg: var(--t2-contact-bg);
     --t-services-bg: var(--t2-services-bg);
     --t-projects-bg: var(--t2-projects-bg);
+    --t-input-border: var(--t2-input-border);
+    --t-footer-bg: var(--t2-footer-bg);
   }
 }
 
@@ -45,6 +83,7 @@
 body,
 html {
   scroll-behavior: smooth;
+  color: var(--t-color);
 }
 html {
   overflow: hidden;
@@ -73,11 +112,11 @@ h1 {
 button,
 main a {
   margin-top: 20px;
-  display: block;
   width: 120px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   border-radius: 7px;
   border: none;
@@ -88,6 +127,10 @@ main a {
 button {
   background-color: var(--t-btn-bg);
   color: var(--t-btn-color);
+}
+
+main #about1 {
+  background-color: var(--t-hero-bg);
 }
 
 main #about1 a {
@@ -103,9 +146,8 @@ main #about1 a:hover {
 }
 
 #projects a:not(a#moreProj) {
-  width: auto;
-  height: auto;
-  padding: 0.2rem 0.8rem;
+  width: 100%;
+  padding: 0.2rem 0.6rem;
 }
 #projects li {
   list-style-type: circle;
@@ -122,6 +164,7 @@ header {
   align-items: center;
   background-color: var(--t-header-bg);
   color: var(--t-header-color);
+  box-shadow: 0px 2px 5px 0px var(--t-color);
   padding: 20px 25px;
   position: fixed;
   top: 0;
@@ -222,16 +265,18 @@ main #projects > h2,
 main #services > h2 {
   text-align: center;
 }
-main #contact,
 main #services {
   background-color: var(--t-services-bg);
 }
-main #services div {
-  margin: 35px 0;
+main #services > div,
+main #projects > div {
+  margin: 35px auto;
   padding: 1.3rem 1.5rem;
   border-radius: 5px;
-  background-color: #fff;
+  max-width: 90%;
+  background-color: var(--t-sp-container);
 }
+
 main #services div h3 {
   text-align: center;
 }
@@ -240,7 +285,6 @@ main #services div p {
   line-height: 1.4em;
 }
 main #services div a {
-  display: block;
   width: 100%;
   border-radius: 25px;
 }
@@ -269,15 +313,13 @@ main #projects div li {
   margin: 8px 0;
 }
 main #projects > div {
-  margin: 35px 0;
+  margin: 35px auto;
   padding: 1.3rem 1.5rem;
   border-radius: 5px;
-  background-color: #fff;
 }
 
 main a#lessProj,
 main a#moreProj {
-  height: auto;
   width: 150px;
   position: relative;
   left: 50%;
@@ -285,7 +327,7 @@ main a#moreProj {
   bottom: 30px;
   transform: translateX(-50%);
   margin: 0;
-  padding: 0.4rem;
+  padding: 1.4rem 0.4rem;
   transition: background 0.3s ease-in-out;
   background-color: transparent;
   border: 2px solid var(--t-btn-bg);
@@ -299,16 +341,24 @@ main a#moreProj:focus {
   background-color: var(--t-btn-bg);
   color: var(--t-btn-color);
 }
+
+main #contact {
+  background-color: var(--t-contact-bg);
+}
+
 main #contact div {
   margin-bottom: 20px;
 }
 main #contact div input,
 main #contact div textarea {
+  text-indent: 5px;
   width: 80vw;
   height: 35px;
-  border: none;
+  border: 1px solid var(--t-input-border);
   border-radius: 6px;
+  font-size: 1.1em;
 }
+
 main #contact div textarea {
   height: 100px;
 }
@@ -317,20 +367,23 @@ main #contact div label {
   margin-bottom: 4px;
   font-weight: 500;
 }
-main #contact div button:hover {
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
+main #contact div button {
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  transition: transform 0.3 ease-in-out;
 }
+main #contact div button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--t-btn-bg);
+  transform: translateY(-0.25em);
+}
+
 footer {
   padding: 1.35rem 1.55rem;
-  background-color: #242424;
-  color: white;
+  background-color: var(--t-footer-bg);
+  color: var(--t-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,7 +404,6 @@ footer ul i {
   font-size: 20px;
   text-align: center;
   border-radius: 50%;
-  background-color: #fff;
   padding-top: 10px;
   -webkit-box-shadow: 0 0 15px 6px;
   box-shadow: 0 0 15px 6px;

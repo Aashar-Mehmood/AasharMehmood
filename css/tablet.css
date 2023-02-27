@@ -139,7 +139,6 @@
   main #contact div input,
   main #contact div textarea {
     height: 45px;
-    border: none;
     border-radius: 6px;
   }
   main #contact div textarea {

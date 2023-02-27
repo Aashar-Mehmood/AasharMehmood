@@ -164,12 +164,12 @@ function showMore() {
   container.innerHTML += data;
   container.scrollBy(0, 20);
   moreBtn.style.display = "none";
-  lessBtn.style.display = "block";
+  lessBtn.style.display = "flex";
 }
 
 function showLess() {
   container.innerHTML = data1;
   container.scrollIntoView();
-  moreBtn.style.display = "block";
+  moreBtn.style.display = "flex";
   lessBtn.style.display = "none";
 }
