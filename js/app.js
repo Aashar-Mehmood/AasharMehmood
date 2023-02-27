@@ -1,6 +1,6 @@
 const data = `
 <div class="container" data-aos="fade-left">
-<img src="images/calulator.png" alt="JavaScript calculator" />
+<img src="images/calculator.png" alt="JavaScript calculator" />
 <div class="desc">
   <h2>Calculator App</h2>
   <h3>Calculator app usign vanilla Js and CSS</h3>
