@@ -1,3 +1,43 @@
+:root {
+  --t1-header-bg: #100f13;
+  --t1-header-color: #ffda87;
+  --t1-hero-bg: #11141b;
+
+  --t2-header-bg: #6c63ff;
+  --t2-header-color: whitesmoke;
+
+  --t2-btn-bg: #6c63ff;
+  --t2-btn-color: whitesmoke;
+
+  --t2-btn-bg2: #bfe1f1;
+  --t2-btn-color2: #100f13;
+
+  --t2-services-bg: #e7f3f8;
+  --t2-projects-bg: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --t-header-bg: var(--t1-header-bg);
+    --t-header-color: var(--t1-header-color);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --t-header-bg: var(--t2-header-bg);
+    --t-header-color: var(--t2-header-color);
+
+    --t-btn-bg: var(--t2-btn-bg);
+    --t-btn-color: var(--t2-btn-color);
+
+    --t-btn-bg2: var(--t2-btn-bg2);
+    --t-btn-color2: var(--t2-btn-color2);
+
+    --t-services-bg: var(--t2-services-bg);
+    --t-projects-bg: var(--t2-projects-bg);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,12 +47,11 @@ html {
   scroll-behavior: smooth;
 }
 html {
-  font-size: 16px;
   overflow: hidden;
   overflow-y: scroll;
 }
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   margin: 0;
 }
@@ -26,25 +65,11 @@ li {
 }
 a {
   text-decoration: none;
-  color: #000;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2em;
 }
-h2 {
-  font-size: 1.6rem;
-}
-h3 {
-  font-size: 1rem;
-}
-a,
-label {
-  font-size: 1rem;
-}
-p {
-  font-size: 1.1rem;
-}
-#otherAch a,
+
 button,
 main a {
   margin-top: 20px;
@@ -53,15 +78,30 @@ main a {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 7px;
   border: none;
   opacity: 1;
   cursor: pointer;
-  background: linear-gradient(45deg, #7fffd3, #b4ffb6f7);
-  -webkit-transition: background 0.6s ease;
-  transition: background 0.6s ease;
 }
+
+button {
+  background-color: var(--t-btn-bg);
+  color: var(--t-btn-color);
+}
+
+main #about1 a {
+  transition: background 0.3s ease-in-out;
+  border: 2px solid var(--t-btn-bg);
+  color: var(--t-btn-bg);
+}
+
+main #about1 a:hover {
+  background-color: var(--t-btn-bg);
+  border: none;
+  color: var(--t-btn-color);
+}
+
 #projects a:not(a#moreProj) {
   width: auto;
   height: auto;
@@ -80,15 +120,8 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
+  background-color: var(--t-header-bg);
+  color: var(--t-header-color);
   padding: 20px 25px;
   position: fixed;
   top: 0;
@@ -96,16 +129,13 @@ header {
   right: 0;
   z-index: 100;
 }
-header > h2 a {
-  font-size: 1em;
-}
+
 header input {
   display: none;
 }
 header label.menu-btn {
   position: relative;
   z-index: 3;
-  font-size: 1.2rem;
 }
 header ul {
   width: 100%;
@@ -139,10 +169,9 @@ header ul {
 }
 header ul li {
   margin-top: 30px;
-  font-size: 1.2rem;
 }
-header ul li a {
-  color: #fff;
+header a {
+  color: var(--t-header-color);
 }
 header ul li:nth-child(1) {
   margin-top: 50px;
@@ -160,14 +189,7 @@ header #click:checked ~ ul {
 header #click:checked ~ label.menu-btn {
   color: #fff;
 }
-/* main {
-  background: #d6ffee;
-} */
-main #about1 {
-  background-image: url("../images/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 main #about1 div {
   margin: 30px 0;
 }
@@ -180,23 +202,14 @@ main #about1 p {
 main #about1 img {
   display: none;
 }
-main #about1 a:hover {
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
-}
+
 main section {
   padding: 1.4rem 2.8rem;
 }
 
 main #projects,
 main #showLessMore {
-  background-color: #d6ffee;
+  background-color: var(--t-projects-bg);
 }
 
 main #contact img,
@@ -208,11 +221,10 @@ main #contact > h2,
 main #projects > h2,
 main #services > h2 {
   text-align: center;
-  font-size: 1.6rem;
 }
 main #contact,
 main #services {
-  background-color: #e7f3f8;
+  background-color: var(--t-services-bg);
 }
 main #services div {
   margin: 35px 0;
@@ -232,15 +244,20 @@ main #services div a {
   width: 100%;
   border-radius: 25px;
 }
-main #services div a:hover {
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
+
+main #services div a,
+main #projects > div a {
+  background-color: var(--t-btn-bg2);
+  color: var(--t-btn-color2);
+  transition: transform 0.25s ease-in-out;
+}
+
+main #services div a:hover,
+main #services div a:focus,
+main #projects > div a:hover,
+main #projects > div a:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--t-btn-bg2);
+  transform: translateY(-0.25em);
 }
 main #projects .desc h2 {
   margin-top: 10px;
@@ -257,16 +274,6 @@ main #projects > div {
   border-radius: 5px;
   background-color: #fff;
 }
-main #projects > div a:hover {
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
-}
 
 main a#lessProj,
 main a#moreProj {
@@ -279,17 +286,18 @@ main a#moreProj {
   transform: translateX(-50%);
   margin: 0;
   padding: 0.4rem;
+  transition: background 0.3s ease-in-out;
+  background-color: transparent;
+  border: 2px solid var(--t-btn-bg);
+  color: var(--t-btn-bg);
 }
+
 main a#lessProj:hover,
-main a#moreProj:hover {
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(aquamarine),
-    to(#78fa78)
-  );
-  background: linear-gradient(to left, #7fffd4, #78fa78);
+main a#moreProj:hover,
+main a#lessProj:focus,
+main a#moreProj:focus {
+  background-color: var(--t-btn-bg);
+  color: var(--t-btn-color);
 }
 main #contact div {
   margin-bottom: 20px;
@@ -307,7 +315,7 @@ main #contact div textarea {
 main #contact div label {
   display: inline-block;
   margin-bottom: 4px;
-  font-weight: 700;
+  font-weight: 500;
 }
 main #contact div button:hover {
   background: -webkit-gradient(
@@ -328,7 +336,6 @@ footer {
   align-items: center;
   text-align: center;
 }
-
 
 footer ul {
   display: -webkit-box;
@@ -364,28 +371,23 @@ main {
   top: 67px;
 }
 
-@media screen and (min-width:320px) {
-  main section{
+@media screen and (min-width: 320px) {
+  main section {
     padding: 1.4rem;
   }
 }
 
 @media screen and (min-width: 400px) {
-  html {
-    font-size: 17px;
-  }
-  main #about1>div>div{
+  main #about1 > div > div {
     width: 75%;
     display: flex;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 520px) {
-  
-  main #about1>div>div{
+  main #about1 > div > div {
     width: 60%;
     display: flex;
     justify-content: space-between;
   }
 }
-
