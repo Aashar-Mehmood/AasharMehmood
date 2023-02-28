@@ -35,6 +35,7 @@ class="feather feather-sun"
 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
 </svg>`;
 const toggler = document.querySelector(".theme-toggler");
+const projects = document.getElementById("projects");
 
 toggler.addEventListener("click", () => {
   const root = document.querySelector(":root");
@@ -67,8 +68,10 @@ function setTheme(userPrefered) {
 
   if (userPrefered === "dark") {
     toggler.innerHTML = moon;
+    projects.style.boxShadow = "0 -2px 4px 0px rgb(253, 253, 253)";
   } else {
     toggler.innerHTML = sun;
+    projects.style.boxShadow = "none";
   }
   root.setAttribute("theme", `${userPrefered}`);
 }
