@@ -308,6 +308,17 @@ main #showLessMore {
   background-color: var(--t-projects-bg);
 }
 
+main #projects h3 {
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+main #projects > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 main #contact img,
 main #projects img,
 main #services img {
@@ -470,6 +481,11 @@ footer ul i:hover {
   -webkit-box-shadow: 0 0 15px 12px;
   box-shadow: 0 0 15px 12px;
 }
+
+footer ul i.fab.fa-github {
+  color: var(--t-color);
+}
+
 footer,
 main {
   position: relative;

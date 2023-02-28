@@ -82,22 +82,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const data = `
 <div class="container" data-aos="fade-left">
-<img src="images/calculator.png" alt="JavaScript calculator" />
-<div class="desc">
-  <h2>Calculator App</h2>
-  <h3>Calculator app usign vanilla Js and CSS</h3>
-  <br />
-  
-  <div class="btns">
-    <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
-      >View Code</a
-    >
-    <a href="https://aashar-mehmood.github.io/JavaScript-Calculator"
-      >Launch</a
-    >
-  </div>
-</div>
-</div>
+          <img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
+          <div class="desc">
+            <h2>Weather App</h2>
+            <h3>Responsive Weather App using open Weather API</h3>
+
+            <div class="btns">
+              <a href="https://github.com/Aashar-Mehmood/JavaScript-WeatherApp"
+                >View Code</a
+              >
+              <a href="https://youtu.be/kSoPUyBrwDM">Watch Demo</a>
+            </div>
+          </div>
+        </div>
 
 <div class="container" data-aos="fade-up">
 <img src="images/crowdFunding-min.jpg" alt="Crowd Funding Website" />
@@ -220,20 +217,23 @@ const data1 = `<h2>Some of Project Samples</h2>
             </div>
           </div>
         </div>
-<div class="container" data-aos="fade-left">
-  <img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
-  <div class="desc">
-    <h2>Weather App</h2>
-    <h3>Weather App using open Weather API</h3>
-    
-    <div class="btns">
-      <a href="https://github.com/Aashar-Mehmood/JavaScript-WeatherApp"
-        >View Code</a
-      >
-      <a href="https://youtu.be/kSoPUyBrwDM">Watch Demo</a>
-    </div>
-  </div>
-</div>`;
+        <div class="container" data-aos="fade-left">
+        <img src="images/calculator.png" alt="JavaScript calculator" />
+        <div class="desc">
+          <h2>Calculator App</h2>
+          <h3>Multi theme Calculator app usign vanilla Js and CSS</h3>
+          <br />
+
+          <div class="btns">
+            <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
+              >View Code</a
+            >
+            <a href="https://aashar-mehmood.github.io/JavaScript-Calculator"
+              >Launch</a
+            >
+          </div>
+        </div>
+      </div>`;
 
 const moreBtn = document.getElementById("moreProj");
 const lessBtn = document.getElementById("lessProj");
