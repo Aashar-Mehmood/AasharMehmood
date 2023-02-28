@@ -250,6 +250,10 @@ main section {
   padding: 1.4rem 2.8rem;
 }
 
+main #projects {
+  box-shadow: 0 -2px 4px 0px var(--t-color);
+}
+
 main #projects,
 main #showLessMore {
   background-color: var(--t-projects-bg);
