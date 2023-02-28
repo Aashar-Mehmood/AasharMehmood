@@ -1,10 +1,12 @@
-
 header {
   padding: 1.2rem 2rem;
 }
-header h2{
-  margin-left: 1.8em;
+@media (min-width: 1440px) {
+  header .theme-toggler {
+    margin-left: 2em;
+  }
 }
+
 header nav ul {
   width: 480px;
 }
@@ -15,11 +17,9 @@ header nav ul li a {
   padding: 20px 0;
 }
 
-
 main section#about1 {
   padding: 4rem 5rem;
 }
-
 
 main #projects > div {
   padding: 1.6rem 2rem;
@@ -32,7 +32,7 @@ footer {
   justify-content: space-evenly;
 }
 
-footer h3{
+footer h3 {
   margin-top: 0;
 }
 
