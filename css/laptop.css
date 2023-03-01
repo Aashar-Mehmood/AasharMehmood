@@ -3,7 +3,7 @@ header {
 }
 @media (min-width: 1440px) {
   header .theme-toggler {
-    margin-left: 2em;
+    margin-left: 2.5em;
   }
 }
 
