@@ -158,7 +158,7 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-down">
-  <img src="images/blogWebsite.png" alt="Blog Website" />
+  <img src="images/bloggingBlaze.png" alt="Blog Website" />
   <div class="desc">
     <h2>Blog Website</h2>
     <h3>Blog Website using PHP, MYSQL, jQuery</h3>
