@@ -149,7 +149,7 @@ const data1 = `<h2>Some of Project Samples</h2>
         >View Code</a
       >
       <a
-        href="https://starshare-web.000webhostapp.com/starshare/"
+        href="http://starshare.infinityfreeapp.com/"
         target="_blank"
         >Launch</a
       >
