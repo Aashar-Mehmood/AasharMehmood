@@ -85,8 +85,26 @@
     line-height: 50px;
   }
   main #services img {
-    height: 200px;
+    height: 300px;
   }
+
+  #testimonial div.slideContainer {
+    height: 40vw;
+  }
+
+  #testimonial div.slideContainer img {
+    height: 90%;
+    width: 94%;
+    margin: auto;
+  }
+
+  h1#left-arrow,
+  h1#right-arrow {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
   main #projects > div {
     position: relative;
   }
@@ -115,6 +133,14 @@
     max-width: 100%;
   }
 }
+
+@media screen and (min-width: 840px) {
+  #testimonial div.slideContainer img {
+    height: auto;
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   main section {
     padding: 3rem 1.1rem;
@@ -127,6 +153,14 @@
 
   main #about1 div div {
     margin: auto;
+  }
+
+  h1#left-arrow {
+    left: 12%;
+  }
+
+  h1#right-arrow {
+    right: 12%;
   }
 
   main #projects > div,

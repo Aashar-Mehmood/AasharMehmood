@@ -192,6 +192,10 @@ main #about1 a {
   color: var(--t-btn-bg);
 }
 
+main a#query {
+  min-width: 200px;
+}
+
 main #about1 a:hover {
   background-color: var(--t-btn-bg);
   border: none;
@@ -337,7 +341,6 @@ main #projects > div {
   margin: 35px auto;
   padding: 1.3rem 1.5rem;
   border-radius: 5px;
-  max-width: 90%;
   background-color: var(--t-sp-container);
 }
 
@@ -351,6 +354,74 @@ main #services div p {
 main #services div a {
   width: 100%;
   border-radius: 25px;
+}
+
+#testimonial {
+  background-color: var(--t-hero-bg);
+  position: relative;
+}
+
+#testimonial h2 {
+  text-align: center;
+}
+
+div.slideContainer {
+  position: relative;
+  width: 100%;
+  height: 70vw;
+}
+
+#testimonial div.slideContainer img {
+  border-radius: 10px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  transform: scale(0);
+  /* transform: scaleX(0); */
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0.2s;
+}
+
+#testimonial div.slideContainer img.active {
+  transform: scale(1);
+  /* transform: scaleX(1); */
+  opacity: 1;
+}
+
+h1#left-arrow,
+h1#right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  font-size: 30px;
+  font-weight: bolder;
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #110f1360;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+  color: whitesmoke;
+}
+
+h1#left-arrow {
+  left: 7%;
+}
+
+h1#right-arrow {
+  right: 7%;
+}
+
+h1#left-arrow:hover,
+h1#right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(233, 221, 221);
+  border-color: rgb(233, 221, 221);
 }
 
 main #services div a,
@@ -498,10 +569,17 @@ main {
   }
 }
 
+@media screen and (min-width: 380px) {
+  div.slideContainer {
+    height: 50vw;
+  }
+}
+
 @media screen and (min-width: 400px) {
   main #about1 > div > div {
     width: 75%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

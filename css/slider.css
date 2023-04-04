@@ -1,0 +1,57 @@
+#testimonial {
+  position: relative;
+}
+
+#testimonial div.slideContainer {
+  border-radius: 5px;
+  position: relative;
+}
+
+div.btns {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+#stopAuto,
+#startAuto {
+  margin: 10px;
+  padding: 20px 35px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonial {
+    width: 90%;
+  }
+  #testimonial div.slideContainer {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #testimonial div.slideContainer {
+    height: 250px;
+  }
+  h1#left-arrow,
+  h1#right-arrow {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+  }
+  div.btns {
+    flex-flow: column;
+  }
+  #stopAuto,
+  #startAuto {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #testimonial div.slideContainer {
+    height: 200px;
+  }
+}

@@ -6,17 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aashar Portfolio</title>
     <base target="_blank" />
-    <link rel="stylesheet" href="css/mobile-min.css" />
-    <link
-      rel="stylesheet"
-      href="css/tablet-min.css"
-      media="(min-width:700px)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/laptop-min.css"
-      media="(min-width: 1440px)"
-    />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
     <link
       rel="stylesheet"
@@ -36,17 +28,19 @@
         </label>
         <ul>
           <li><a href="#services" target="_self">Services</a></li>
+          <li><a href="#testimonial" target="_self">Testimonial</a></li>
           <li><a href="#projects" target="_self">Projects</a></li>
           <li><a href="#contact" target="_self">Contact</a></li>
-          <li><a href="#about" target="_self">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about1">
         <div>
-          <h1>Creating impactful solutions with technology <br /></h1>
-          <p>
+          <h1 data-aos="fade-right" data-aos-delay="100">
+            Creating impactful solutions with technology <br />
+          </h1>
+          <p data-aos="fade-right" data-aos-delay="400">
             Welcome to my portfolio website! I am Aashar, a passionate and
             dedicated developer, <br />
             with a strong commitment to using my skills and knowledge to build
@@ -54,15 +48,15 @@
             On this site, you'll find a showcase of my projects and skills.
           </p>
           <div>
-            <a
-              href="https://www.upwork.com/freelancers/~01da2ab49103c0250a"
-              target="_blank"
-              >Hire Me</a
+            <a href="mailto:aasharmehmood3@gmail.com" target="_blank" id="query"
+              >Share Your Query</a
             >
             <a href="Aashar Mehmood CV.pdf" target="_blank">View CV</a>
           </div>
         </div>
         <img
+          data-aos="fade-left"
+          data-aos-delay="400"
           src="images/building_websites.svg"
           alt="Group Working on Websites Development"
         />
@@ -72,47 +66,58 @@
         <h2>Services I Provide</h2>
         <div data-aos="fade-right" data-aos-delay="300">
           <h3>Wordpress Websites</h3>
-          <img
-            src="images/undraw_wordpress_utxt.svg"
-            alt="Wordpress Websites Development"
-          />
+          <img src="images/download.svg" alt="Wordpress Websites Development" />
           <p>
             Get any type of Wordpress website according to your requirements at
             affordable price which could be your Portfolio, blog or of any
             other.
           </p>
           <a href="https://www.upwork.com/freelancers/~01da2ab49103c0250a"
-            >Get your Website</a
+            >Get Your Website</a
           >
         </div>
         <div data-aos="fade-down" data-aos-delay="600">
-          <h3>Custom Websites</h3>
+          <h3>Websites with Admin Panel</h3>
           <img
-            src="images/undraw_web_shopping_dd4l.svg"
-            alt="Ecommerce Website Development"
+            src="images/custom-website.svg"
+            alt="Laravel Website Development"
           />
           <p>
-            I create Fully responsive websites using HTML, CSS, JavaScript, PHP
-            and MySQL. You get a full featured website.
+            Revolutionize the way you do business with the powerful Laravel
+            admin panels. Easy to scale and fast.
           </p>
           <a href="https://www.upwork.com/freelancers/~01da2ab49103c0250a"
             >Get Custom website</a
           >
         </div>
         <div data-aos="fade-up" data-aos-delay="900">
-          <h3>Design to Code</h3>
-          <img
-            src="images/undraw_portfolio_website_lidw.svg"
-            alt="Portfolio Websites Development"
-          />
+          <h3>Single Page Applications</h3>
+          <img src="images/react-website.svg" alt="React Website" />
           <p>
-            I convert figma, xd or image files (designs) to fully functional
-            website which are responsive on all media devices.
+            Transform your website into a seamless, interactive experience with
+            single page applications. No more clunky webiste navigations.
           </p>
           <a href="https://www.upwork.com/freelancers/~01da2ab49103c0250a"
-            >Get design to Code</a
+            >Get React Website</a
           >
         </div>
+      </section>
+
+      <section id="testimonial">
+        <h2>What Clients Say</h2>
+        <div class="slideContainer" data-aos="fade-up">
+          <img
+            src="./images/Client1_sm_mobile.PNG"
+            alt="client testimonial 1"
+            class="active"
+          />
+          <img
+            src="./images/Client2_sm_mobile.PNG"
+            alt="client testimonial 2"
+          />
+        </div>
+        <h1 id="left-arrow"><</h1>
+        <h1 id="right-arrow">></h1>
       </section>
 
       <section id="projects">
@@ -219,7 +224,7 @@
       </div>
 
       <section id="contact">
-        <h2>Send Queries/Suggestions</h2>
+        <h2>Send your Query</h2>
         <form
           action="https://formsubmit.co/aasharmehmood3@gmail.com"
           method="POST"
@@ -319,5 +324,6 @@
       async
     ></script>
     <script src="./js/app-min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
