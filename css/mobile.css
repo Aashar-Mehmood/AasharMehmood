@@ -177,7 +177,15 @@ button {
   align-items: center;
   cursor: pointer;
   background-color: var(--t-header-color);
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
 }
+
+.theme-toggler:hover,
+.theme-toggler:focus {
+  opacity: 1;
+}
+
 .theme-toggler svg {
   stroke: var(--t-header-bg);
 }

@@ -24,7 +24,11 @@
   <body>
     <header>
       <!-- <h2 class="h2"><a href="index.html" target="_self">Aashar</a></h2> -->
-      <div class="theme-toggler"></div>
+      <div
+        class="theme-toggler"
+        tabindex="1"
+        aria-describedby="Theme Toggler"
+      ></div>
       <nav class="phoneNav">
         <input type="checkbox" id="click" />
         <label for="click" class="menu-btn">
@@ -41,10 +45,8 @@
     <main>
       <section id="about1">
         <div>
-          <h1 data-aos="fade-right" data-aos-delay="100">
-            Creating impactful solutions with technology <br />
-          </h1>
-          <p data-aos="fade-right" data-aos-delay="400">
+          <h1>Creating impactful solutions with technology <br /></h1>
+          <p>
             Welcome to my portfolio website! I am Aashar, a passionate and
             dedicated developer, <br />
             with a strong commitment to using my skills and knowledge to build
@@ -257,27 +259,27 @@
     </main>
     <footer id="about">
       <div class="exp">
-        <h3>Expertise</h3>
+        <h3>Languages/Frameworks</h3>
         <ul>
-          <li>
-            <i class="fab fa-php" style="color: #7377ad"></i>
+          <li title="Laravel/PHP">
+            <i class="fab fa-laravel" style="color: #f05340"></i>
           </li>
-          <li>
-            <i class="fa fa-database" style="color: #29a6c3"></i>
+          <li title="SQL">
+            <i class="fa fa-database" style="color: #00758f"></i>
           </li>
-          <li>
-            <i class="fab fa-js" style="color: #e4d417"></i>
+          <li title="React/JavaScript">
+            <i class="fab fa-react" style="color: #61dbfb"></i>
           </li>
-          <li>
+          <li title="HTML5">
             <i class="fab fa-html5" style="color: #f63"></i>
           </li>
-          <li>
+          <li title="CSS3">
             <i class="fa fa-css3" style="color: #29f"></i>
           </li>
-          <li>
+          <li title="BootStrap">
             <i class="fab fa-bootstrap" style="color: #85d"></i>
           </li>
-          <li>
+          <li title="Git">
             <i class="fa fa-git" style="color: #f53"></i>
           </li>
         </ul>
