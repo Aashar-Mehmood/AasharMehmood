@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 const data = `
-<div class="container" data-aos="fade-left">
+<div class="container" data-aos="fade-right">
           <img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
           <div class="desc">
             <h2>Weather App</h2>
@@ -96,7 +96,7 @@ const data = `
           </div>
         </div>
 
-<div class="container" data-aos="fade-up">
+<div class="container" data-aos="fade-down">
 <img src="images/crowdFunding-min.jpg" alt="Crowd Funding Website" />
 <div class="desc">
   <h2>Crowd Funding </h2>
@@ -114,23 +114,23 @@ const data = `
 </div>
 </div>
 
-<div class="container" data-aos="fade-left">
-<img src="images/slider-min.jpg" alt="Responsive Image Slider" />
-<div class="desc">
-  <h2>Image Slider</h2>
-  <h3>Vanilla Js Image Slider</h3>
-  <br />
-  <br />
-  <div class="btns">
-    <a href="https://github.com/Aashar-Mehmood/JavaScript-SlideShow"
-      >View Code</a
-    >
-    <a href="https://aashar-mehmood.github.io/JavaScript-SlideShow"
-      >Launch</a
-    >
-  </div>
-</div>
-</div>
+<div class="container" data-aos="fade-up">
+          <img src="images/calculator.png" alt="JavaScript calculator" />
+          <div class="desc">
+            <h2>Calculator App</h2>
+            <h3>Multi theme Calculator app usign vanilla Js and CSS</h3>
+            <br />
+
+            <div class="btns">
+              <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
+                >View Code</a
+              >
+              <a href="https://aashar-mehmood.github.io/JavaScript-Calculator"
+                >Launch</a
+              >
+            </div>
+          </div>
+        </div>
 
 `;
 
@@ -139,8 +139,7 @@ const data1 = `<h2>Some of Project Samples</h2>
   <img src="images/starshare.png" alt="Star Share" />
   <div class="desc">
     <h2>StarShare</h2>
-    <h3>Music Platform for stars, organizers and suppliers</h3>
-   
+    <h3>Music Platform with admin Panel and Payment Functionality</h3>
 
     <div class="btns">
       <a
@@ -148,9 +147,7 @@ const data1 = `<h2>Some of Project Samples</h2>
         target="_blank"
         >View Code</a
       >
-      <a
-        href="http://starshare.infinityfreeapp.com/"
-        target="_blank"
+      <a href="http://starshare.infinityfreeapp.com/" target="_blank"
         >Launch</a
       >
       <!-- <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a> -->
@@ -158,27 +155,55 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-down">
-  <img src="images/bloggingBlaze.png" alt="Blog Website" />
+  <img src="images/bloggingBlaze.png" alt="Blogging Blaze" />
   <div class="desc">
-    <h2>Blog Website</h2>
-    <h3>Blog Website using PHP, MYSQL, jQuery</h3>
-    
+    <h2>Blogging Blaze</h2>
+    <h3>Blog Website using PHP, MYSQL with admin Panel</h3>
 
     <div class="btns">
       <a href="https://github.com/Aashar-Mehmood/Dynamic-Blog-Website"
         >View Code</a
       >
-      <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a>
+      <a href="http://bloggingblaze.infinityfreeapp.com/">Launch</a>
+      <!-- <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a> -->
     </div>
   </div>
 </div>
-<div class="container" data-aos="fade-left">
+<div class="container" data-aos="fade-up">
+  <img src="images/nationFacts.png" alt="Quizzical" />
+  <div class="desc">
+    <h2>Nation Facts</h2>
+    <h3>
+      Countries Api, React, Tailwind CSS, Search and Filter
+      Functionality
+    </h3>
+    <div class="btns">
+      <a href="https://github.com/Aashar-Mehmood/nation-facts"
+        >View Code</a
+      >
+      <a href="https://nation-facts.netlify.app/">Launch</a>
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-right">
+  <img src="images/multiStepForm.png" alt="React Multi Step Form" />
+  <div class="desc">
+    <h2>React Form</h2>
+    <h3>Multi Step Form using Custom validation</h3>
+
+    <div class="btns">
+      <a href="https://github.com/Aashar-Mehmood/multi-step-form"
+        >View Code</a
+      >
+      <a href="https://multi-step-form-12.netlify.app/">Launch</a>
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-down">
   <img src="images/Quizzical.png" alt="Quizzical" />
   <div class="desc">
     <h2>Quizzical</h2>
     <h3>Quiz App using React and OTDB API</h3>
-    
-
     <div class="btns">
       <a href="https://github.com/Aashar-Mehmood/react-quiz"
         >View Code</a
@@ -187,53 +212,22 @@ const data1 = `<h2>Some of Project Samples</h2>
     </div>
   </div>
 </div>
-<div class="container" data-aos="fade-right">
+<div class="container" data-aos="fade-up">
   <img src="images/tenzies.png" alt="tenzies" />
   <div class="desc">
     <h2>Tenzies</h2>
     <h3>Tenzies Game using React and Local Storage</h3>
-    
+
     <div class="btns">
       <a href="https://github.com/Aashar-Mehmood/react-tenzies-game"
         >View Code</a
       >
-      <a href="https://aashar-mehmood.github.io/react-tenzies-game/">Launch</a>
+      <a href="https://aashar-mehmood.github.io/react-tenzies-game/"
+        >Launch</a
+      >
     </div>
   </div>
-</div>
-<div class="container" data-aos="fade-up">
-          <img src="images/multiStepForm.png" alt="React Multi Step Form" />
-          <div class="desc">
-            <h2>Multi Step Form</h2>
-            <h3>React Multi Step Form along with validation</h3>
-        
-
-            <div class="btns">
-              <a
-                href="https://github.com/Aashar-Mehmood/multi-step-form"
-                >View Code</a
-              >
-              <a href="https://multi-step-form-12.netlify.app/">Launch</a>
-            </div>
-          </div>
-        </div>
-        <div class="container" data-aos="fade-left">
-        <img src="images/calculator.png" alt="JavaScript calculator" />
-        <div class="desc">
-          <h2>Calculator App</h2>
-          <h3>Multi theme Calculator app usign vanilla Js and CSS</h3>
-          <br />
-
-          <div class="btns">
-            <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
-              >View Code</a
-            >
-            <a href="https://aashar-mehmood.github.io/JavaScript-Calculator"
-              >Launch</a
-            >
-          </div>
-        </div>
-      </div>`;
+</div>`;
 
 const moreBtn = document.getElementById("moreProj");
 const lessBtn = document.getElementById("lessProj");
