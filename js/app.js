@@ -81,17 +81,19 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 const data = `
-<div class="container" data-aos="fade-right">
-          <img src="images/weatherApp-min.jpg" alt="Weather Checking App" />
+<div class="container" data-aos="fade-up">
+          <img src="images/tenzies.png" alt="tenzies" />
           <div class="desc">
-            <h2>Weather App</h2>
-            <h3>Responsive Weather App using open Weather API</h3>
+            <h2>Tenzies</h2>
+            <h3>Tenzies Game using React and Local Storage</h3>
 
             <div class="btns">
-              <a href="https://github.com/Aashar-Mehmood/JavaScript-WeatherApp"
+              <a href="https://github.com/Aashar-Mehmood/react-tenzies-game"
                 >View Code</a
               >
-              <a href="https://youtu.be/kSoPUyBrwDM">Watch Demo</a>
+              <a href="https://aashar-mehmood.github.io/react-tenzies-game/"
+                >Launch</a
+              >
             </div>
           </div>
         </div>
@@ -147,25 +149,25 @@ const data1 = `<h2>Some of Project Samples</h2>
         target="_blank"
         >View Code</a
       >
-      <a href="http://starshare.infinityfreeapp.com/" target="_blank"
+      <!-- <a href="http://starshare.infinityfreeapp.com/" target="_blank"
         >Launch</a
-      >
-      <!-- <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a> -->
+      > -->
+      <a href="https://youtu.be/56W7dLD-2Gg">Watch Demo</a>
     </div>
   </div>
 </div>
 <div class="container" data-aos="fade-down">
-  <img src="images/bloggingBlaze.png" alt="Blogging Blaze" />
+  <img src="images/cmpnd.png" alt="Star Share" />
   <div class="desc">
-    <h2>Blogging Blaze</h2>
-    <h3>Blog Website using PHP, MYSQL with admin Panel</h3>
+    <h2>CMS CMPND</h2>
+    <h3>CMS for a fitness App (Developed At Dankia Solutions)</h3>
 
     <div class="btns">
-      <a href="https://github.com/Aashar-Mehmood/Dynamic-Blog-Website"
-        >View Code</a
-      >
-      <a href="http://bloggingblaze.infinityfreeapp.com/">Launch</a>
-      <!-- <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a> -->
+      <!-- <a href="http://starshare.infinityfreeapp.com/" target="_blank"
+        >Launch</a
+      > -->
+      <a href="https://youtu.be/BIOna9GUBwA">Watch Demo</a>
+      <a href="https://youtu.be/BIOna9GUBwA">View Details</a>
     </div>
   </div>
 </div>
@@ -186,6 +188,22 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-right">
+  <img src="images/bloggingBlaze.png" alt="Blogging Blaze" />
+  <div class="desc">
+    <h2>Blogging Blaze</h2>
+    <h3>Blog Website using PHP, MYSQL with admin Panel</h3>
+
+    <div class="btns">
+      <a href="https://github.com/Aashar-Mehmood/Dynamic-Blog-Website"
+        >View Code</a
+      >
+      <!-- <a href="http://bloggingblaze.infinityfreeapp.com/">Launch</a> -->
+      <a href="https://youtu.be/sGFQVU3JL7w">Watch Demo</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" data-aos="fade-down">
   <img src="images/multiStepForm.png" alt="React Multi Step Form" />
   <div class="desc">
     <h2>React Form</h2>
@@ -199,7 +217,7 @@ const data1 = `<h2>Some of Project Samples</h2>
     </div>
   </div>
 </div>
-<div class="container" data-aos="fade-down">
+<div class="container" data-aos="fade-up">
   <img src="images/Quizzical.png" alt="Quizzical" />
   <div class="desc">
     <h2>Quizzical</h2>
@@ -209,22 +227,6 @@ const data1 = `<h2>Some of Project Samples</h2>
         >View Code</a
       >
       <a href="https://react-quiz-scrimba.netlify.app/">Launch</a>
-    </div>
-  </div>
-</div>
-<div class="container" data-aos="fade-up">
-  <img src="images/tenzies.png" alt="tenzies" />
-  <div class="desc">
-    <h2>Tenzies</h2>
-    <h3>Tenzies Game using React and Local Storage</h3>
-
-    <div class="btns">
-      <a href="https://github.com/Aashar-Mehmood/react-tenzies-game"
-        >View Code</a
-      >
-      <a href="https://aashar-mehmood.github.io/react-tenzies-game/"
-        >Launch</a
-      >
     </div>
   </div>
 </div>`;
