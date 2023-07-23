@@ -172,20 +172,15 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-up">
-  <img src="images/nationFacts.png" alt="Quizzical" />
-  <div class="desc">
-    <h2>Nation Facts</h2>
-    <h3>
-      Countries Api, React, Tailwind CSS, Search and Filter
-      Functionality
-    </h3>
-    <div class="btns">
-      <a href="https://github.com/Aashar-Mehmood/nation-facts"
-        >View Code</a
-      >
-      <a href="https://nation-facts.netlify.app/">Launch</a>
+    <img src="images/tutorHunt.PNG" alt="Tutor Hunt" />
+    <div class="desc">
+      <h2>Tutor Hunt</h2>
+      <h3>Online Learning Platform (Developed At Dankia Solutions)</h3>
+      <div class="btns">
+        <a href="https://youtu.be/Ql6UgdwiQe4">Watch Demo</a>
+        <a href="https://skylarks.pakmultiservices.com/public/">Launch</a>
+      </div>
     </div>
-  </div>
 </div>
 <div class="container" data-aos="fade-right">
   <img src="images/bloggingBlaze.png" alt="Blogging Blaze" />
