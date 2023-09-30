@@ -117,26 +117,74 @@ const data = `
 </div>
 
 <div class="container" data-aos="fade-up">
-          <img src="images/calculator.png" alt="JavaScript calculator" />
+          <img src="images/Quizzical.png" alt="Quizzical" />
           <div class="desc">
-            <h2>Calculator App</h2>
-            <h3>Multi theme Calculator app usign vanilla Js and CSS</h3>
-            <br />
-
+            <h2>Quizzical</h2>
+            <h3>Quiz App using React and OTDB API</h3>
             <div class="btns">
-              <a href="https://github.com/Aashar-Mehmood/JavaScript-Calculator"
+              <a href="https://github.com/Aashar-Mehmood/react-quiz"
                 >View Code</a
               >
-              <a href="https://aashar-mehmood.github.io/JavaScript-Calculator"
-                >Launch</a
-              >
+              <a href="https://react-quiz-scrimba.netlify.app/">Launch</a>
             </div>
           </div>
         </div>
 
 `;
 
-const data1 = `<h2>Some of Project Samples</h2>
+const data1 = `
+<h2>Some of Project Samples</h2>
+<div class="container" data-aos="fade-right">
+  <img src="images/dashboardCapture.PNG" alt="Star Share" />
+  <div class="desc">
+    <h2>Stock Tracking CMS</h2>
+    <h3>
+      CMS for a stock tracking App (Developed at Dankia Solutions)
+    </h3>
+
+    <div class="btns">
+      <a
+        href="https://drive.google.com/file/d/1p5ApPyfZFoLocvzuvynnXtpBFYi_BHMH/view?usp=sharing"
+        target="_blank"
+        >View Details</a
+      >
+      <!-- <a href="http://starshare.infinityfreeapp.com/" target="_blank"
+        >Launch</a
+      > -->
+      <a
+        href="https://drive.google.com/file/d/1p5ApPyfZFoLocvzuvynnXtpBFYi_BHMH/view?usp=sharing"
+        >Watch Demo</a
+      >
+    </div>
+  </div>
+</div>
+<div class="container" data-aos="fade-down">
+  <img src="images/cmpnd.png" alt="Star Share" />
+  <div class="desc">
+    <h2>CMS CMPND</h2>
+    <h3>CMS for a fitness App (Developed At Dankia Solutions)</h3>
+
+    <div class="btns">
+      <!-- <a href="http://starshare.infinityfreeapp.com/" target="_blank"
+        >Launch</a
+      > -->
+      <a href="https://youtu.be/BIOna9GUBwA">Watch Demo</a>
+      <a href="https://youtu.be/BIOna9GUBwA">View Details</a>
+    </div>
+  </div>
+</div>
+
+<div class="container" data-aos="fade-up">
+  <img src="images/tutorHunt.PNG" alt="Tutor Hunt" />
+  <div class="desc">
+    <h2>Tutor Hunt</h2>
+    <h3>Online Learning Platform (Developed At Dankia Solutions)</h3>
+    <div class="btns">
+      <a href="https://youtu.be/Ql6UgdwiQe4">Watch Demo</a>
+      <a href="https://skylarks.pakmultiservices.com/public/">Launch</a>
+    </div>
+  </div>
+</div>
 <div class="container" data-aos="fade-right">
   <img src="images/starshare.png" alt="Star Share" />
   <div class="desc">
@@ -157,32 +205,6 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 <div class="container" data-aos="fade-down">
-  <img src="images/cmpnd.png" alt="Star Share" />
-  <div class="desc">
-    <h2>CMS CMPND</h2>
-    <h3>CMS for a fitness App (Developed At Dankia Solutions)</h3>
-
-    <div class="btns">
-      <!-- <a href="http://starshare.infinityfreeapp.com/" target="_blank"
-        >Launch</a
-      > -->
-      <a href="https://youtu.be/BIOna9GUBwA">Watch Demo</a>
-      <a href="https://youtu.be/BIOna9GUBwA">View Details</a>
-    </div>
-  </div>
-</div>
-<div class="container" data-aos="fade-up">
-    <img src="images/tutorHunt.PNG" alt="Tutor Hunt" />
-    <div class="desc">
-      <h2>Tutor Hunt</h2>
-      <h3>Online Learning Platform (Developed At Dankia Solutions)</h3>
-      <div class="btns">
-        <a href="https://youtu.be/Ql6UgdwiQe4">Watch Demo</a>
-        <a href="https://skylarks.pakmultiservices.com/public/">Launch</a>
-      </div>
-    </div>
-</div>
-<div class="container" data-aos="fade-right">
   <img src="images/bloggingBlaze.png" alt="Blogging Blaze" />
   <div class="desc">
     <h2>Blogging Blaze</h2>
@@ -198,7 +220,7 @@ const data1 = `<h2>Some of Project Samples</h2>
   </div>
 </div>
 
-<div class="container" data-aos="fade-down">
+<div class="container" data-aos="fade-up">
   <img src="images/multiStepForm.png" alt="React Multi Step Form" />
   <div class="desc">
     <h2>React Form</h2>
@@ -212,19 +234,7 @@ const data1 = `<h2>Some of Project Samples</h2>
     </div>
   </div>
 </div>
-<div class="container" data-aos="fade-up">
-  <img src="images/Quizzical.png" alt="Quizzical" />
-  <div class="desc">
-    <h2>Quizzical</h2>
-    <h3>Quiz App using React and OTDB API</h3>
-    <div class="btns">
-      <a href="https://github.com/Aashar-Mehmood/react-quiz"
-        >View Code</a
-      >
-      <a href="https://react-quiz-scrimba.netlify.app/">Launch</a>
-    </div>
-  </div>
-</div>`;
+`;
 
 const moreBtn = document.getElementById("moreProj");
 const lessBtn = document.getElementById("lessProj");
